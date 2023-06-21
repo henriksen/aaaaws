@@ -1,0 +1,12 @@
+﻿@page
+@model readapi.Pages.UsersModel
+@{
+}
+
+<h1>Users</h1>
+<div>
+    @foreach (var name in Model.UserNames)
+    {
+        <div>@name</div>
+    }
+</div>

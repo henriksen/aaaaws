@@ -1,0 +1,15 @@
+﻿@page
+@model Incremental.Pages.WriteModel
+@{
+}
+
+<div>@Model.Token</div>
+
+<div>
+    @foreach(var claim in Model.JwtSecurityToken.Claims) {
+        <div>@claim.Type: @claim.Value</div>
+    }
+
+</div>
+
+
